@@ -28,7 +28,7 @@ Esimerkki kuvan lisäämisestä:
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [peppy-froyo-1c12a8.netlify.app]
+- **Julkaistu sovellus:** [peppy-froyo-1c12a8.netlify.app] (peppy-froyo-1c12a8.netlify.app)
 - **GitHub-repositorio:** [https://github.com/lidimolo/Projekti-2a-AJAX-sovellus-REST-APIa-hy-dynt-en]
 - **Projektin videoesittely:** [https://laureauas-my.sharepoint.com/:v:/g/personal/lim00039_laurea_fi/IQDs5nGbfTytSJdon8BN4Y7GAfAAkUeqnlzJbwe61E9tEk4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=snz8AQ]
 
@@ -69,7 +69,7 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksestasi.
 
 Esimerkki kuvan lisäämisestä:
 
-![Screenshot.png]
+![Sovelluksen kuvakaappaus](Screenshot.png)
 
 ## Tunnetut virheet / puutteet
 
