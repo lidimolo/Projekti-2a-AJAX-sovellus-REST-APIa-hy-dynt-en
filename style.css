@@ -3,7 +3,12 @@ body {
     text-align: center;
     margin: 0;
     padding: 30px;
-    background-color: #e8e8ec;
+   background: linear-gradient(
+    135deg,
+    #e8e8ec 0%,
+    #d9eaff 50%,
+    #f0e4ff 100% );
+    background-attachment: fixed;
     color: rgb(0, 0, 0);
 
 }
@@ -14,11 +19,42 @@ body {
     padding: 20px;
 }
 .movie-card {
-    background-color: #e2e2e2;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.65),
+        rgba(180, 210, 255, 0.15)
+    );
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(70, 90, 130, 0.12);
+
+    padding: 15px;
+    text-align: center;
     color: rgb(0, 0, 0);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    transition: transform 0.3s ease;
+    display: grid;
+    grid-template-rows: 95px 45px 1fr;
+    align-items: start;
+    cursor: pointer;
+}
+.movie-card h3 {
+    margin: 0;
+    align-self: center;
+}
+
+.movie-card p {
+    margin: 0;
+    align-self: center;
+}
+
+.movie-card:hover img {
+    transform: scale(1.08);
 }
 .movie-card img {
     width: 100%;
@@ -42,17 +78,87 @@ main {
 input {
     padding: 12px 16px;
     border-radius: 8px;
-    border: 1px solid #777;
+    border: 1px solid  rgba(255, 255, 255, 0.8);;
     font-size: 16px;
+      background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+
+    outline: none;
 }
 button {
     padding: 12px 20px;
-    background-color: #59baff;
-    border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+     background: linear-gradient(
+        135deg,
+        rgba(89, 186, 255, 0.45),
+        rgba(255, 255, 255, 0.2)
+    );
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 15px rgba(70, 90, 130, 0.12);
+
+    transition: all 0.3s ease;
 }
 button:hover {
-    background-color: #48a4e6;
+        background: linear-gradient(
+        135deg,
+        rgba(89, 186, 255, 0.65),
+        rgba(255, 255, 255, 0.35)
+    );
+
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(70, 90, 130, 0.2);
+}
+button:active {
+    transform: scale(0.97);
+}
+.rating {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.4),
+        rgba(180, 210, 255, 0.15)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.rating p {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.star {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 2px;
+    font-size: 28px;
+    color: #a5a5a5;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.star.selected {
+    color: #f5b301;
+}
+
+.star:hover {
+    transform: scale(1.2);
+    background: transparent;
+    box-shadow: none;
 }
